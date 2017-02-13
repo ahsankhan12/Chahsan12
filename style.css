@@ -1,89 +1,116 @@
-/* style.css
- * This file provides css styles.
- */
+﻿/* 
+~ COPYRIGHT BY CH AHSAN~
+~ OWNER OF CHAUDHRY BOT TEAM ~
+*/
 
-body,html {
-	background-color: #3b4b54; width : 100%;
-	height: 100%;
-	margin: 0 auto;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	color: #ffffff;
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+background: url(background.jpg) no-repeat center center fixed ;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.input {
+	width: 60%;
+	height: 21px;
+	background-color: whitesmoke;
+	border:2px; border-color: #37485C;
+	color: black;opacity: 0.6;filter:alpha(opacity=60);
+}
+
+.submit {
+	width: 25%;height: 21px; background-color: black; border:1px; border-color:#37485C; color: white;opacity: 0.6;filter:alpha(opacity=60);
 }
 
 a {
 	text-decoration: none;
-	color: #00aed1;
+	color: #37485C;
 }
 
-a:hover {
-	text-decoration: underline;
+a:hover { 
+	color: darkgrey }
+
+
+.button {
+    background-color:#930000;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    width: 140px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-family: "Courgette";
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;;
+
 }
 
-.newappIcon {
-	padding-top: 10%;
-	display: block;
-	margin: 0 auto;
-	padding-bottom: 2em;
-	max-width:200px;
+.button:hover {
+    background-color: #420101;
+    color: #fff;
+    border: 1px solid #000000;
 }
 
-h1 {
-	font-weight: bold;
-	font-size: 2em;
+.css img{
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+margin: 0 10px 5px 0;
 }
 
-.leftHalf {
-	float: left;
-	background-color: #26343f;
-	width: 45%;
-	height: 100%;
+.css img:hover{
+-webkit-transform:scale(1.1);
+-moz-transform:scale(1.1);
+-o-transform:scale(1.1);
+box-shadow:0px 0px 30px gray;
+-webkit-box-shadow:0px 0px 30px gray;
+-moz-box-shadow:0px 0px 30px gray;
+opacity: 1;
+
 }
 
-.rightHalf {
-	float: right;
-	width: 55%;
-	background-color: #313f4a;
-	height: 100%;
-	overflow:auto;
+@-webkit-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
 }
-
-.description {
-	padding-left: 50px;
-	padding-right: 50px;
-	text-align: center;
-	font-size: 1.2em;
+@-moz-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
 }
-
-.blue {
-	color: #00aed1;
+@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
 }
-
-
-table {
-	table-layout: fixed;
-	width: 800px;
-	margin: 0 auto;
-	word-wrap: break-word;
-	padding-top:10%;
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
 }
-
-th {
-	border-bottom: 1px solid #000;
-}
-
-th, td {
-	text-align: left;
-	padding: 2px 20px;
-}
-
-.env-var {
-	text-align: right;
-	border-right: 1px solid #000;
-	width: 30%;
-}
-
-pre {
-	padding: 0;
-	margin: 0;
-}
-
